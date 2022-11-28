@@ -1,4 +1,3 @@
-# rl_school_project
 # 1. Evironment
 ### 1.1 What is super mario bros
 
