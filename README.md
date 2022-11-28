@@ -5,7 +5,7 @@
 Super mario bros was originally a game for the Nitendo Entertainment System (NES) that has been ported to the OpenAI Gym enivronment. <br>
 The Goal of the game is to reach the flag at the end of the level while avoinding the enemies.<br>
 
-[!plot](./mario.png)
+![Screenshot](mario.png)
 
 # 2 Algorithms
 
