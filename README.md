@@ -1,10 +1,10 @@
 # 1. Evironment
-### 1.1 What is super mario bros
+### 1.1 What is Space invaders
 
-Super mario bros was originally a game for the Nitendo Entertainment System (NES) that has been ported to the OpenAI Gym enivronment. <br>
-The Goal of the game is to reach the flag at the end of the level while avoinding the enemies.<br>
+Space invaders is a classic shoot them up arcade game from 1978 developped by Tomohiro Nishikado. <br>
+The goal is to defeat wave after wave of descending aliens with a horizontally moving laser to earn as many points as possible without getting hit by the aliens.<br>
 
-![Screenshot](mario.png)
+![Screenshot](Space_Invaders.jpg)
 
 # 2 Algorithms
 
