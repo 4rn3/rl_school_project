@@ -12,10 +12,10 @@ The goal is to defeat wave after wave of descending aliens with a horizontally m
 
 For this project I'll be using the Deep Q Learning algorithm and the Actor-critic algorithm. <br>
 
-I chose for these algorithms since I wanted to test the difference in performance between a value and policy based algortihm.<br>
-Even though actor-critic is more of a hybrid architecture of value- and policy-based algorithms it seemed quite a bit faster than the other policy based algorithms i've tried so i'll let it slide.<br>
+I chose these algorithms since I wanted to test the difference in performance between a value and policy based algortihm.<br>
+Disclaimer, actor-critic is considered a hybrid architecture of value- and policy-based algorithms but was quite a bit faster than the other policy based algorithm I've tried so to save time I went with AC<br>
 
-The algorithms will be compared on: <ol> <li>Training time</li> <li>#Episodes</li> <li>Agent results</li> </ol>   
+The algorithms will be compared on: <ol> <li>Training time</li> <li>Episodes rewards</li> <li>Agent results</li> </ol>   
 
 ### 2.2 Deep Q learning (DQN)
 
@@ -26,7 +26,7 @@ Finding the optimal value-function will automatically result in finding the opti
 Q-learning does this by initializing a Q-table (mappings of state-action pair & Q-value) chosing an action based on this table and updating it with the Bellman equation. <br>
 When there are too many states/ actions or a continous state space  this approach doesn't work anymore because the Q-table becomes too large. <br>
 This is where DQN comes into play: 
-    Instead of getting the next action from the Q-table the model predicts the next action.
+    Instead of getting the next action from the Q-table the model predicts the next action. <br>
     Instead of updating the Q-table we fit our model.
 
 
