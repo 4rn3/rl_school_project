@@ -29,10 +29,6 @@ This is where DQN comes into play:
     Instead of getting the next action from the Q-table the model predicts the next action.
     Instead of updating the Q-table we fit our model.
 
-#### Trained DQN Agent
-This agent was trained on 60 episodes <br>
-[![Watch the video](https://img.youtube.com/vi/2Gu2V13gedw/maxresdefault.jpg)](https://youtu.be/2Gu2V13gedw)
-
 
 ### 2.3 Actor-critic (AC)
 
