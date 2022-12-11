@@ -36,3 +36,6 @@ This is where DQN comes into play:
 
 ### 3.3 Actor-critic (AC)
 Actor-critic is a hybrid between policy and value based algortihms with the actor part being policy based (it takes in a state and returns the probability of all actions) and the critic being value based (it takes in the state and the predicted value and returns a score to see how well the action fits)
+
+# 4 Results
+The Actor-critic algorithm was a lot faster to train, had a higher high score and was more consitent 
