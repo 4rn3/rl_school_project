@@ -1,23 +1,27 @@
-# 1. Evironment
-### 1.1 What is Space invaders
+#1 Assignment
+For the assignment I need to chose 2 algorithms, train them on an environment we haven't seen before and compare them.
+
+# 2. Evironment
+### 2.1 What is Space invaders
 
 Space invaders is a classic shoot them up arcade game from 1978 developped by Tomohiro Nishikado. <br>
 The goal is to defeat wave after wave of descending aliens with a horizontally moving laser to earn as many points as possible without getting hit by the aliens.<br>
 
 ![Screenshot](Space_Invaders.jpg)
 
-# 2 Algorithms
+# 3 Algorithms
 
-### 2.1 Which algorithms to compare
+### 3.1 Which algorithms to compare
 
 For this project I'll be using the Deep Q Learning algorithm and the Actor-critic algorithm. <br>
 
-I chose these algorithms since I wanted to test the difference in performance between a value and policy based algortihm.<br>
-Disclaimer, actor-critic is considered a hybrid architecture of value- and policy-based algorithms but was quite a bit faster than the other policy based algorithm I've tried so to save time I went with AC<br>
+Orignally I wanted to compare a value based apporach with a policy based one. For my value based algorithm I opted for DQN since I thought it would preform better
+than tabular Q-learning or SARSA because of the (possibly) large state space. I also find it a more intresting algorithm because of the neural network part.
+I compared some policy based approaches but in the end settled on actor-critic because of the time to train (didn't have that much time for this assignment) and lack of inherit overfitting. This is not a true policy based algorithm but rather a hybrid between policy and value based so in the end I wouldn't call it a true comparison.<br>
 
 The algorithms will be compared on: <ol> <li>Training time</li> <li>Episodes rewards</li> <li>Agent results</li> </ol>   
 
-### 2.2 Deep Q learning (DQN)
+### 3.2 Deep Q learning (DQN)
 
 Deep Q learning is a value based algorithm, <br>
 A value based algorithm trains a value-function that outputs the value of a state or state-action pair. That value-function is then used by the policy (which is chosen in advanced) to take an action. <br>
@@ -30,12 +34,5 @@ This is where DQN comes into play:
     Instead of updating the Q-table we fit our model.
 
 
-### 2.3 Actor-critic (AC)
-
-In the previous section i briefly explained value based algorithms, now we'll take a look at policy based.<br>
-In a policy based appoach we aim to optimize the policy directly without using a value function. <br>
-
-The other policy based algorithm we covered was policy gradient, this worked well but took long to train and had high variance.<br>
-Actor-Critic methods stabelize training by reducing the variance and where faster. <br>
-
-In AC we have an actor that controls how the agent behaves, this is the policy-based part and a critic that measures how good the taken actions are, this is the value-based part.<br>
+### 3.3 Actor-critic (AC)
+Actor-critic is a hybrid between policy and value based algortihms with the actor part being policy based (it takes in a state and returns the probability of all actions) and the critic being value based (it takes in the state and the predicted value and returns a score to see how well the action fits)
