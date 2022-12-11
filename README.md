@@ -1,5 +1,5 @@
 # 1 Assignment
-For the assignment I need to chose 2 algorithms, train them on an environment we haven't seen before and compare them.
+For the assignment I need to choose 2 algorithms, train them on an environment we haven't seen before and compare them.
 
 # 2. Evironment
 ### 2.1 What is Space invaders
