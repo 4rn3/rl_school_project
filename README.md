@@ -39,3 +39,8 @@ Actor-critic is a hybrid between policy and value based algortihms with the acto
 
 # 4 Results
 The Actor-critic algorithm seemed to be the better one in my case, it was a lot faster to train, had a higher high score and was more consistent 
+
+### 4.1 Demo
+Both AC & DQN where trained on 100 episodes
+AC high score (690): [![Watch the video](https://img.youtube.com/vi/p1SF8hDtybg/maxresdefault.jpg)](https://youtu.be/p1SF8hDtybg) <br>
+DQN high score (520): [![Watch the video](https://img.youtube.com/vi/u5GNGkuLWMM/maxresdefault.jpg)](https://youtu.be/u5GNGkuLWMM)
